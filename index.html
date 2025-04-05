@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
 </head>
 <body>
     <!-- header -->
     <header class="header">
         <a href="#" class="logo">Narinder Singh <span class="animate" style="--i:1;"></span></a>
-
-
         <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#project">Project</a>
-            <a href="skills">Skills</a>
+            <a href="#project">Education</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#skills">Skills</a> -->
             <a href="#contact">Contact</a>
 
             <span class="active-nav"></span>
@@ -50,60 +45,83 @@
             </p>
                 
                 <div class="btn-box">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn">contect Me</a>
+                    <a href="resume.pdf" class="btn">Resume</a>
+                    <a href="#contact" class="btn">contact Me</a>
                     <span class="animate" style="--i:5;"></span>
                 </div>
         </div>
 
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.linkedin.com/in/narinder-singh04/"><i class='bx bxl-linkedin'></i></a>
             <a href="#"><i class='bx bxl-github' ></i></a>
             <a href="#"><i class='bx bxl-instagram' ></i></a>
             <a href="#"><i class='bx bxl-facebook' ></i></a>
-            <a href="#"><i class='bx bxl-gmail' ></i></a>
+            <a href="mailto:narinderkhuttan1005@gmail.com"><i class='bx bxl-gmail' ></i></a>
             <span class="animate" style="--i:6;"></span>
         </div>
 
         <div class="image-section">
-            <img src="1.png" alt="Narinder Singh">
+            <img src="image\1.png" alt="Narinder Singh">
         </div>
 
         <div class="home-imgHover"></div>
         <span class="animate home-img" style="--i:7;"></span>
-        <!-- home section stop -->
-
 
     </section>
+    <!-- home section stop -->
+    
+    <!-- about section start -->
+    <section id="about" class="about-section">
+      <h1 class="heading"><i class="fas fa-graduation-cap"></i> About <span>Me</span></h1>
+        <div class="text-content">
+          <p class="section-sub-text">Introduction</p>
+          <h2 class="section-head-text">Overview.</h2>
+        </div>
+      
+        <p class="about-description">
+          I am a B.Tech CSE AI & ML student passionate about web development and AI. My focus is on building smart
+          and user-friendly applications through continuous learning and innovation. I am dedicated to exploring the
+          intersection of artificial intelligence and web technologies, aiming to create impactful solutions and enhance
+          user experiences.
+        </p>
+      
+        <div class="services-container">
+          <div class="service-card" data-tilt data-tilt-max="45" data-tilt-speed="450">
+            <div class="card-inner">
+              <img src="logo/forntend.png" alt="Service Icon" class="card-icon" />
+              <h3 class="card-title">Frontend Development</h3>
+            </div>
+          </div>
+      
+          <div class="service-card" data-tilt data-tilt-max="45" data-tilt-speed="450">
+            <div class="card-inner">
+              <img src="logo/backend.png" alt="Service Icon" class="card-icon" />
+              <h3 class="card-title">Backend Development</h3>
+            </div>
+          </div>
 
-    <!-- about me section start -->
-    <section class="home section" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-        
-        <div class="home_section">
-           <div class="icns icons" data-reveal="left">
-              
-           </div>
-           <div class="image_container">
-              <img src="about.jpg" alt="">
-              <div class="new_btn">
-                 <a href="#portfolio">my Portfolio <i class="ri-arrow-right-line"></i></a>
-              </div>
-           </div>
-           <div class="home_content" data-reveal="right">
-              <div class="drop">
-                 <div class="home_text">
-                    <h3>hi, I'm <span> I am a B.Tech CSE AI & ML student passionate about web development and AI. My focus is on building smart
-                        and user-friendly applications through continuous learning and innovation. I am dedicated to exploring the
-                        intersection of artificial intelligence and web technologies, aiming to create impactful solutions and enhance
-                        user experiences.</span></h3>
-                    <p></p>
-                 </div>
-              </div>
-           </div>
+          <div class="service-card" data-tilt data-tilt-max="45" data-tilt-speed="450">
+            <div class="card-inner">
+              <img src="logo/softwaredeveloper.png" alt="Service Icon" class="card-icon" />
+              <h3 class="card-title">Software Development</h3>
+            </div>
+          </div>
+
+          <div class="service-card" data-tilt data-tilt-max="45" data-tilt-speed="450">
+            <div class="card-inner">
+              <img src="logo/aisolution.png" alt="Service Icon" class="card-icon" />
+              <h3 class="card-title">AI/ML Solutions</h3>
+            </div>
+          </div>          
         </div>
     </section>
-    <!-- about me section stop -->
+    <!-- about section stop -->
+      
+      <!-- Tilt effect script -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".service-card"));
+      </script>
 
     <!-- Education section start -->
     <section class="project" id="project">
@@ -112,7 +130,7 @@
     
         <div class="education-container">
             <div class="card">
-                <img src="image.png" alt="School Image">
+                <img src="image/school.png" alt="School Image">
                 <div class="card-content">
                     <p>2021 - 2022</p>
                     <h3>Gsss. School (Boys) Ropar</h3>
@@ -122,7 +140,7 @@
             </div>
     
             <div class="card">
-                <img src="clg.png" alt="University Image">
+                <img src="image/college.png" alt="University Image">
                 <div class="card-content">
                     <p>2022 - Present</p>
                     <h3>LAMRIN TECH SKILLS UNIVERSITY PUNJAB</h3>
@@ -131,249 +149,89 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-    
-        body {
-            background-color: #1e1e1e;
-            color: white;
-        }
-    
-        /* Section Styling */
-        .project {
-            text-align: center;
-            padding: 40px 10px;
-        }
-    
-        .heading {
-            font-size: 32px;
-            color: white;
-            margin-bottom: 10px;
-        }
-    
-        .heading span {
-            color: teal;
-        }
-    
-        .quote {
-            font-size: 18px;
-            color: #ccc;
-            margin-bottom: 30px;
-            font-style: italic;
-        }
-    
-        /* Card Container */
-        .education-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        /* Education Card */
-        .card {
-            display: flex;
-            flex-direction: row;
-            background-color: #23a7b2;
-            width: 90%;
-            max-width: 700px;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 15px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-    
-        .card:hover {
-            transform: scale(1.02);
-        }
-    
-        .card img {
-            width: 35%;
-            object-fit: cover;
-        }
-    
-        .card-content {
-            padding: 15px;
-            flex: 1;
-            text-align: left;
-        }
-    
-        .card-content h3 {
-            color: #032b62;
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
-    
-        .card-content p {
-            font-size: 14px;
-            color: #f5f5f5;
-        }
-    
-        .gpa {
-            color: #3b7302;
-            font-weight: bold;
-            margin-top: 5px;
-        }
-    
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .card {
-                flex-direction: column;
-                width: 95%;
-            }
-    
-            .card img {
-                width: 100%;
-                height: 150px;
-            }
-        }
-    </style>
-    
-      
-         
-           
+    </section> 
     <!-- Education section stop -->
 
+    <!-- project section start -->
+    <section id="projects" class="projects-section">
+      <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Projects</span></h1>
+        <div class="text-content">
+          <p class="section-sub-text">My work</p>
+        </div>
+      
+        <p class="projects-description">
+          Following projects showcases my skills and experience through real-world examples of my work.
+        </p>
+      
+        <div class="projects-container">
+          <!-- Repeat this block for each project -->
+          <div class="project-card" data-tilt data-tilt-max="45" data-tilt-speed="450">
+            <div class="project-image-wrapper">
+              <img src="image/p1.png" alt="Project Image" class="project-image" />
+              <div class="source-code-icon" onclick="window.open('https://github.com/your-repo-link', '_blank')">
+                <img src="logo/github.png" alt="GitHub" />
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Dynamic Pricing</h3>
+              <p class="project-description">An AI-powered pricing model that adjusts product prices in real time based on demand, competitor rates, and sales trends to maximize revenue and competitiveness.</p>
+              <div class="project-tags">
+                <span class="tag tag-blue">#html</span>
+                <span class="tag tag-green">#css</span>
+                <span class="tag tag-pink">#JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-tilt data-tilt-max="45" data-tilt-speed="450">
+            <div class="project-image-wrapper">
+              <img src="image/p2.png" alt="Project Image" class="project-image" />
+              <div class="source-code-icon" onclick="window.open('https://github.com/your-repo-link', '_blank')">
+                <img src="logo/github.png" alt="GitHub" />
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Portfolio</h3>
+              <p class="project-description">A personal web portfolio showcasing skills, projects, and experience with a clean UI, responsive design, and smooth navigation.</p>
+              <div class="project-tags">
+                <span class="tag tag-blue">#react</span>
+                <span class="tag tag-green">#ai</span>
+                <span class="tag tag-pink">#JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-tilt data-tilt-max="45" data-tilt-speed="450">
+            <div class="project-image-wrapper">
+              <img src="image/dataset.png" alt="Project Image" class="project-image" />
+              <div class="source-code-icon" onclick="window.open('https://github.com/your-repo-link', '_blank')">
+                <img src="logo/github.png" alt="GitHub" />
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">dataset</h3>
+              <p class="project-description">Worked on multiple datasets to apply data preprocessing, build predictive models, and perform analysis using machine learning techniques like classification and regression.</p>
+              <div class="project-tags">
+                <span class="tag tag-blue">#JavaScript</span>
+                <span class="tag tag-green">#ai</span>
+                <span class="tag tag-pink">#python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- project section stop -->
+      
+      <!-- Tilt effect script -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".project-card"));
+      </script>
+      
+     
+
     <!-- skills section start -->
-     <section>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: Arial, sans-serif;
-            }
-    
-            body {
-                background-color: #1e1e1e;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                flex-direction: column;
-            }
-    
-            .skills-container {
-                width: 90%;
-                max-width: 900px;
-                text-align: center;
-            }
-    
-            h1 {
-                font-size: 28px;
-                text-transform: uppercase;
-                font-weight: bold;
-                margin-bottom: 30px;
-                position: relative;
-                letter-spacing: 1px;
-            }
-    
-            h1::after {
-                content: "";
-                display: block;
-                width: 80px;
-                height: 5px;
-                background: white;
-                margin: 10px auto;
-                border-radius: 5px;
-            }
-    
-            .skill-row {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
-    
-            .skill {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 48%;
-                margin-bottom: 15px;
-            }
-    
-            .circular-progress {
-                width: 50px;
-                height: 50px;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-    
-            .circular-progress svg {
-                transform: rotate(-90deg);
-                width: 100%;
-                height: 100%;
-            }
-    
-            .circular-progress circle {
-                fill: none;
-                stroke-width: 3;
-                stroke-linecap: round;
-                stroke-dasharray: 100;
-                stroke-dashoffset: 14;
-            }
-    
-            .circular-progress .percentage-text {
-                position: absolute;
-                font-size: 12px;
-                font-weight: bold;
-                color: white;
-            }
-    
-            .skill-name {
-                flex: 1;
-                text-transform: uppercase;
-                font-size: 16px;
-                text-align: left;
-                margin-left: 10px;
-            }
-    
-            .progress-bar {
-                flex: 3;
-                height: 4px;
-                background: #333;
-                border-radius: 5px;
-                position: relative;
-                overflow: hidden;
-                margin: 0 10px;
-            }
-    
-            .progress-bar::before {
-                content: "";
-                position: absolute;
-                width: 86%;
-                height: 100%;
-                background: teal;
-                border-radius: 5px;
-            }
-    
-            .percentage {
-                flex: 0.5;
-                font-weight: bold;
-                color: white;
-            }
-    
-            @media (max-width: 768px) {
-                .skill {
-                    width: 100%;
-                }
-            }
-        </style>
-    </head>
-    <body>
-    
+    <!-- <section id="skills">
         <div class="skills-container">
-            <h1>SKILLS</h1>
+          <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Skills</span></h1>
     
             <div class="skill-row">
                 <div class="skill">
@@ -479,11 +337,96 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section> -->
     <!-- skills section stop -->
 
-    
+    <!-- contact section start --> 
+     <section id="contact">
+      <h1 class="heading"><i class="fas fa-graduation-cap"></i> Contact<span>Me</span></h1>    
+     <div class="home_section">
+          <!-- Image Container -->
+          <div class="image_container">
+            <img src="image/contact.jpg" alt="Profile Picture">
+            <div class="new_btn">
+              <a href="resume.pdf">my Portfolio <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+      
+          <!-- Contact Form -->
+          <div class="home_content">
+            <div class="contact_form">
+              <h3>Contact Me</h3>
+              <form id="contactForm" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+          
+          <script>
+            document.getElementById("contactForm").addEventListener("submit", function (e) {
+              e.preventDefault(); // prevent actual form submission
+              alert("🎉 Woohoo! Your message has been sent successfully! Thanks for reaching out – we’ll get back to you soon!");
+              
+              // Optional: Clear the form fields after submission
+              this.reset();
+            });
+          </script>
+          
+        </div>
+    </section>
+    <!-- contact section stop -->
 
+    <!-- footer section start -->
+    <footer class="footer_section">
+        <div class="footer_container">
+          <!-- Logo or Name -->
+          <div class="footer_logo">
+            <h2>Narinder Singh</h2>
+            <p>Building smart and user-friendly applications through AI & Web Development.</p>
+          </div>
+      
+          <!-- Navigation Links -->
+          <div class="footer_links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#project">Education</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="footer_contact">
+            <h4>Contact Info</h4>
+            <ul>
+              <li>Email: narinderkhuttan1005@gmail.com</li>
+              <li>Phone: +91 8699410317</li>
+              <li>Location: Punjab, India</li>
+            </ul>
+          </div>
+      
+          <!-- Social Icons -->
+          <!-- <div class="footer_social">
+            <h4>Follow Me</h4>
+            <div class="social_icons">
+              <a href="#"><i class="ri-github-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-twitter-x-line"></i></a>
+            </div>
+          </div> -->
+        </div>
+      
+        <div class="footer_bottom">
+          <p>&copy; 2025 Narinder Singh. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- footer section stop -->
 
 </body>
 <script src="script.js"></script>
